@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="tenta.css">
+       <title>Document</title>
+       <style>
+           .lists{
+               width: 300px;
+               height: 50px;
+               animation-name: move;
+               animation-duration: 5s;
+               background-color:pink;
+           }
+           @keyframes move{
+               from{ background-color: pink; width:300px; height:50px;}
+               to{background-color: blue; width:500px; height: 200px;}
+           }
+           .list2{
+               float: right;
+               width: 300px;
+               height: 500px;
+               background: purple;
+               transition: all width 4s ease;
+           }
+           .list2:hover{
+               width:500px;
+               background-color: olive;
+               cursor: pointer;
+           }
+       </style>
+    </head>
+    <body>
+     <div class="lists">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li class="dd"><a href="#">Work</a>
+                <div class="list">
+                    <a href="#">work1</a>
+                    <a href="#">work1</a>
+                    <a href="#">work1</a>
+                </div>
+        </ul>
+        </div>
+        <div class="list2">
+            <img src="bigthumbnail.jpg">
+        </div>
+
+    </body>
+</html>
